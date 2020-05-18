@@ -77,7 +77,7 @@ function reloadGame(answer) {
   });
 })();
 
-// Set timer to show the color of the cells for 0.5 seconds. After that ,flip to white.
+// Set timer to show the color of the cells for 1 second. After that ,flip to white.
 setTimeout(function() { cells.forEach(cell => cell.classList.toggle('flip')); }, timeout);
 
 // Add an event listener to every cell. If a click event occurs, execute flipcell()
