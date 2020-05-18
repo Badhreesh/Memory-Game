@@ -3,7 +3,7 @@ const cells = document.querySelectorAll('.cell');
 
 var count = 0;
 var r = 8;
-var timeout = 1000;
+var timeout = 1000; // 1000 milliseconds
 
 /** Flips the currently clicked cell. */
 function flipCell() {
@@ -77,7 +77,7 @@ function reloadGame(answer) {
   });
 })();
 
-// Set timer to show the color of the cells for 1 second. After that ,flip to white.
+// Set timer to show the color of the cells for 1000 milliseconds. After that ,flip to white.
 setTimeout(function() { cells.forEach(cell => cell.classList.toggle('flip')); }, timeout);
 
 // Add an event listener to every cell. If a click event occurs, execute flipcell()
